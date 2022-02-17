@@ -1,0 +1,181 @@
+@font-face {
+    font-family: rmfont;
+    src: url(../font/get_schwifty.ttf);
+  }
+
+body{
+    width: 880px;
+    margin: 0 auto;
+}
+
+html{
+    background-color: rgb(0, 0, 0);
+    font-family: rmfont;
+}
+
+header img{
+    display: block;
+    margin: 0 auto;
+}
+
+#shoMeContainer{
+    position:absolute;
+    left: -240px;
+    top: -150px;
+}
+
+button{
+    font-size: 20px;
+    color: #1ebfb9;
+    background-color: black;
+    border: 2px solid #ddf07a;
+    padding: 0.75em;
+    border-radius: 1em;
+    font-family: rmfont;
+}
+
+button:hover{
+    cursor: pointer;
+    box-shadow: inset 0 0 1em #ddf07a, 0 0 1em #ddf07a;
+    text-shadow: 0px 0px 10px #ddf07a,0px 0px 10px #ddf07a;
+}
+
+#controls{
+    color: #1ebfb9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#controls h2{
+    font-size: 25px;
+    text-align: center;
+    margin: 1.25em 0;
+    line-height: 30px;
+    text-shadow: 0px 0px 10px #ddf07a,0px 0px 10px #ddf07a;
+}
+
+#resetButton{
+    display: none;
+}
+
+#prevButton{
+    display: none;
+}
+
+#nextButton{
+    display: block;
+    margin: 0 auto;
+}
+
+#mapa{
+    position: relative;
+}
+
+#videoWin{
+    display: none;
+}
+
+#winMessage{
+    text-shadow: 0px 0px 10px #ddf07a;
+    box-shadow: inset 0 0 1em #ddf07a, 0 0 1em #ddf07a;
+    display: none;
+    border: 5px solid #ddf07a;
+    border-radius: 20px;
+    width: 500px;
+    position: absolute;
+    top: 30px;
+    left: 170px;
+    z-index: 3;
+    background: rgba(0, 0, 0, 0.75)
+}
+
+#winMessage button{
+    display: block;
+    margin: 0 auto 30px;
+    background: rgba(0, 0, 0, 0);
+    border: 2px solid #ddf07a;
+}
+
+#winText{
+    font-size: 30px;
+    line-height: 40px;
+    color: #1ebfb9;
+    text-align: center;
+    padding: 1em;
+}
+
+#win{
+    position: absolute;
+    display: none;
+    left: 880px;
+    top: 155px;
+}
+
+#player{
+    animation-duration: 200ms;
+    z-index: 2;
+}
+
+#rat{
+    animation-duration: 800ms;
+    z-index: 2;
+}
+
+#jaguar{
+    animation-duration: 425ms;
+    z-index: 2;
+}
+
+#agent{
+    animation-duration: 750ms;
+    z-index: 2;
+}
+
+#agent1{
+    animation-duration: 600ms;
+    z-index: 2;
+}
+
+#agent2{
+    animation-duration: 500ms;
+    z-index: 2;
+}
+
+/*Animações*/
+@keyframes slideUp {
+    from {margin-top: 40px;}
+    to {margin-top: 0;}
+    }
+
+.slideUp {
+    animation-name: slideUp
+}
+
+@keyframes slideDown {
+    from {margin-top: -40px;}
+    to {margin-top: 0;}
+    }
+
+.slideDown {
+    animation-name: slideDown
+}
+
+@keyframes slideRight {
+    from {margin-left: -40px;}
+    to {margin-left: 0;}
+    }
+
+.slideRight {
+    animation-name: slideRight
+}
+
+@keyframes slideLeft {
+    from {margin-left: 40px;}
+    to {margin-left: 0;}
+    }
+
+.slideLeft {
+    animation-name: slideLeft
+}

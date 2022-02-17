@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Labirinto</title>
+</head>
+<body>
+    <header>
+        <img src="assets/img/logo.png" alt="I'm Pickle Rick!">
+    </header>
+    <section id="controls">
+        <h2>Help Rick get to the anti-pickle serum!<br> Use keyboard arrows to navigate through the maze.</h2>
+        <div id="buttonsContainer">
+            <button id="sobButton" onclick = "newGame()">You son of a b****, I'm in!</button>
+            <button id="resetButton" onclick = "reset()">Reset</button>
+            <button id="prevButton" onclick = "prevMap()">PREV</button>
+        </div>
+    </section>
+    <section id="mapa">
+        <div id="winMessage">
+            <h2 id="winText"></h2>
+            <button onclick="proceed()">Proceed</button>
+        </div>
+        <iframe id="videoWin" width="840" height="474" src="https://www.youtube.com/embed/Onyhu9L9RH4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div id="shoMeContainer">
+            <img src="assets/img/showme.gif" alt="Show me what you got!" srcset="">
+        </div>
+        <div id="win">
+            <button id="nextButton" onclick = "nextMap()">NEXT</button>
+            <img src="assets/img/rickwin.gif" alt="Wubba lubba dub dub!" srcset="">
+        </div>
+    </section>
+    <script src="assets/scripts/mapsAudios.js"></script>
+    <script src="assets/scripts/playerMove.js"></script>
+    <script src="assets/scripts/ratMove.js"></script>
+    <script src="assets/scripts/jaguarMove.js"></script>
+    <script src="assets/scripts/agentMove.js"></script>
+    <script src="assets/scripts/clearMoves.js"></script>
+    <script src="assets/scripts/finish.js"></script>
+    <script src="assets/scripts/index.js"></script>
+</body>
+</html>
